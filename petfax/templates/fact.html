@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Fact</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>Add New Fun Fact</h1>
+    <form method="POST">
+        <label for="submitter">Submitter</label>
+        <input type="text" id="submitter" name="submitter" required>
+        <label for="fun_fact">Fun Fact</label>
+        <textarea type="text" id="fun_fact" name="fun_fact" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
