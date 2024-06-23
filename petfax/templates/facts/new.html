@@ -10,11 +10,13 @@
 
 <body>
     <h1>Add New Fun Fact</h1>
-    <form method="POST">
+    <form 
+    action="/facts"
+    method="POST">
         <label for="submitter">Submitter</label>
         <input type="text" id="submitter" name="submitter" required>
-        <label for="fun_fact">Fun Fact</label>
-        <textarea type="text" id="fun_fact" name="fun_fact" required></textarea>
+        <label for="fact">Fun Fact</label>
+        <textarea type="text" id="fact" name="fact" required></textarea>
         <button type="submit">Submit</button>
     </form>
 </body>
